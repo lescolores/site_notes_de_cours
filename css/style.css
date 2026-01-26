@@ -23,8 +23,8 @@ nav {
 .menu a:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: #ffffff;
-    color: #ffffff;
+    text-decoration-color: #000000;
+    color: #000000;
     cursor: pointer;
 }
 /* All */
