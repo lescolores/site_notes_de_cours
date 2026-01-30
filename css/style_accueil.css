@@ -1,4 +1,3 @@
-/* Menu */
 nav {
     background-color: #ffffff;
     
@@ -27,7 +26,6 @@ nav {
     color: #000000;
     cursor: pointer;
 }
-/* All */
 .banniere {
     display: flex;
     flex-direction: row;
@@ -35,7 +33,6 @@ nav {
     align-items: center;
     width: 100%;
 }
-/* Page - Accueil */
 .h1_accueil {
     text-align: center;
     font-size: 50px;
@@ -44,4 +41,3 @@ nav {
     text-align: center;
     font-size: 30px;
 }
-/* Page - Accueil */

@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.png" type="image/png">
     <title>Accueil</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_accueil.css">
   </head>
   <body>
     <header>
-        <nav aria-label="Menu principal">
-            <div role="menu" class="menu">
-                <a role="menuitem" href="index.html">Accueil</a>
-                <a role="menuitem" href="php.html">PHP</a>
-                <a role="menuitem" href="html.html">HTML</a>
-                <a role="menuitem" href="css.html">CSS</a>
+        <nav class="top-nav" aria-label="Menu principal">
+            <div class="menu">
+                <a href="index.html">Accueil</a>
+                <a href="cours/php/index.html">PHP</a>
+                <a href="cours/html/index.html">HTML</a>
+                <a href="cours/css/index.html">CSS</a>
             </div>
         </nav>
     </header>
     <main>
       <div class="image">
-                <img src="images/banniere_accueil.png" alt="Notes de cours" class="banniere">
-                </div>
-            </div>
+        <img src="images/banniere_accueil.png" alt="Notes de cours" class="banniere">
+      </div>
       <section>
         <div class="h1_accueil">
           <h1>Let's go on est capable la gang !</h1>
@@ -33,4 +32,10 @@
       </section>
     </main>
   </body>
+  <footer>
+    <p>&copy; <span id="year"></span> Copyright à Caroline Richard, Amélie Hénault et Bobby Brien-Laporte ©.</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </html>

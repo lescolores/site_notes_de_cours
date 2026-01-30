@@ -1,0 +1,89 @@
+nav {
+    text-align: center;
+    font-size: 18px;
+}
+.menu {
+    background-color: #4cd3f5;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.menu a {  
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+.menu a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #000000;
+    color: #000000;
+    cursor: pointer;
+}
+/* Css de base */
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.titleimportant {
+    font-size: 50px;
+}
+
+/* Sidebar + container + contenu à droite*/
+.container {
+    display: flex;
+    align-items: flex-start; /* Pour aligné les 2 colonnes dans le haut */
+}
+.sidebar {
+  width: 200px;
+  background-color: #4cd3f5;
+  padding: 20px 0;
+  min-height: 100vh;
+  flex-shrink: 0;
+}
+.sidebar a {
+    padding: 10px 0;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    color: #000000;
+    text-transform: uppercase;
+}
+.sidebar a:hover {
+    background-color: #2e9fbb;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #000000;
+}
+.contenu-droite {
+    padding: 0px 20px;
+    flex: 1;
+}
+
+/*PHP*/
+table {
+    width: 100%;
+    border-collapse: collapse; /* Fusionne les bordures pour un effet net */
+    margin: 20px 0;
+    font-family: sans-serif;
+    border: 2px solid #000000;
+}
+
+th {
+    background-color: #4cd3f5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 2px solid #000000;
+    padding : 10px
+}
+
+td {
+    padding: 10px;
+    border: 2px solid #000000;
+}
