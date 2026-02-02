@@ -1,6 +1,5 @@
 nav {
     background-color: #ffffff;
-    
     text-align: center;
     font-size: 18px;
 }
@@ -24,7 +23,6 @@ nav {
     text-decoration-thickness: 3px;
     text-decoration-color: #000000;
     color: #000000;
-    cursor: pointer;
 }
 .banniere {
     display: flex;
