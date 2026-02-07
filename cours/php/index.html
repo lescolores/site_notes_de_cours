@@ -3,52 +3,158 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil - Notes PHP</title>
+    <title>Symboles en PHP</title>
     <link rel="stylesheet" href="../../css/style_php.css">
 </head>
 <body>
     <header>
-        <nav class="top-nav" aria-label="Menu principal">
-            <div class="menu">
-                <a href="../../index.html">Accueil</a>
-                <a href="index.html">PHP</a>
-                <a href="../html/index.html">HTML</a>
-                <a href="../css/index.html">CSS</a>
-            </div>
-        </nav>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="index.html">Accueil</a>
+        <a href="cours/php/index.html">PHP</a>
+        <a href="cours/html/index.html">HTML</a>
+        <a href="cours/css/index.html">CSS</a>
+      </nav>
     </header>
     <section>
         <h1 class="titleimportant">Notes pour PHP</h1>
     </section>
-    <section>
-        <div class="container">
-            <div class="sidebar">
-                <h2>Sidebar</h2>
-                <nav>
-                    <a href="boucles.html">Boucles</a>
-                    <a href="fonctions.html">Fonctions</a>
-                </nav>
-            </div>
-            <div class="contenu-droite">
-                <h2>Tableaux des symboles</h2>
-                <table>
-                    <thead>
-                        <tr>                                
-                            <th>Symbole</th>
-                            <th>Signification</th>
-                            <th>Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>+=</td>
-                            <td>Blah blah</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-</body>
-</html>
+    <main class="container">
+        <aside>
+            <h2>Menu</h2>
+            <nav id="menu-sidebar" >
+            </nav>
+        </aside>
 
+        <section>
+            <h2>Tableaux des symboles</h2>
+            <div class="section-droite">
+                <div class="contenu-droite1">
+                    <table>
+                        <thead>
+                            <tr>                             
+                                <th>Symbole</th>
+                                <th>Signification</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="title-section">Opérateur de base</td>
+                            </tr>
+                            <tr>
+                                <td> < </td>
+                                <td> Plus petit que</td>
+                                <td> Ex. 2 < 10 </td>
+                            </tr>
+                            <tr>
+                                <td> > </td>
+                                <td> Plus grand que</td>
+                                <td> Ex. 40 > 12 </td>
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Modulo</td>
+                                <td>Calcul de 17 % 5 :
+                                    <p>17 / 5 = 3.4</p>
+                                    <p>3 * 5 = 15</p>
+                                    <p>17 - 15 = 2</p>
+                                    <p>17 % 5 = 2</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="title-section">Opérateurs de comparaisons et de logiques</td>
+                            </tr>
+                            <tr>
+                                <td>&&</td>
+                                <td>Compare deux booléens, <mark>TOUTES</mark> les conditions doivent être vraies</td>
+                                <td>Surnommer le Et logique</td>
+                            </tr>
+                            <tr>
+                                <td>||</td>
+                                <td>Compare deux booléens, mais au minimum <mark>UNE seule</mark> condition doit être vraie</td>
+                                <td>Surnommer le Ou logique</td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Vérifie que les valeurs ne sont pas</td>
+                                <td>Surnommer le Non logique</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="contenu-droite2">
+                    <table>
+                        <thead>
+                            <tr>                             
+                                <th>Symbole</th>
+                                <th>Signification</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="title-section">Opérateurs d'assignation</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>++</p>
+                                    <p>--</p>
+                                </td>
+                                <td>
+                                    <p>Incrémenter de 1</p>
+                                    <p>Désincrémenter de 1</p>
+                                <td>
+                                    <p>i++ signifie i + 1</p>
+                                    <p>i-- signifie i - 1</p>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>+=</p>
+                                    <p>-=</p>
+                                    <p>*=</p>
+                                    <p>/=</p>
+                                <td>Assigner après l'opération</td>
+                                <td>
+                                    <p>Permet d'éviter de répéter la variable inutilement</p>
+                                    <p>Ex. : i+= 3 signifie i = i + 3</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>+=</p>
+                                    <p>-=</p>
+                                    <p>*=</p>
+                                    <p>/=</p>
+                                <td>Assigner après l'opération</td>
+                                <td>
+                                    <p>Permet d'éviter de répéter la variable inutilement</p>
+                                    <p>Ex. : i+= 3 signifie i = i + 3</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>\</td>
+                                <td>
+                                    <p>1. Permet de ne pas confondre un apostrophe et un guillement</p>
+                                    <p>2. Permet des actions invisibles</p>
+                                </td>
+                                <td>
+                                    <p>1. Ex. : 'J\'aime la poutine'</p>
+                                    <p>2. \n = Saut de ligne</p>
+                                    <p>   \t = Faire un tabulation</p>
+                                    <p>    \$ = Affiche le $</p>
+                                    <p>S'appelle un backslash</p>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&copy; <span id="year"></span> Copyright à Caroline Richard et Amélie Hénault ©.</p>
+</footer>
+<script src="../../js/script.js"></script>
+</html>

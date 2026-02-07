@@ -1,72 +1,97 @@
-nav {
-    text-align: center;
-    font-size: 18px;
+/*---CSS de base---*/
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
 }
 .menu {
-    background-color: #4cd3f5;
-    padding: 20px 0;
+    background-color: #4cd3f5; 
+    padding: 10px 0;           
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    justify-content: center;   
+    gap: 15px;                 
 }
 .menu a {  
-    color: rgb(0, 0, 0);
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 15px;
+    font-size: 18px;
+    padding: 10px 15px;        
+    transition: all 0.3s;      
+    font-family: sans-serif;
 }
 .menu a:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: #000000;
-    color: #000000;
-    cursor: pointer;
+    text-underline-offset: 5px; 
 }
-/* Css de base */
+footer {
+    background-color: #4cd3f5;
+    font-family: sans-serif;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 h1 {
     text-align: center;
 }
 h2 {
     text-align: center;
 }
-.titleimportant {
+.titleimportant { /* H1 */
     font-size: 50px;
 }
 
 /* Sidebar + container + contenu à droite*/
 .container {
     display: flex;
-    align-items: flex-start; /* Pour aligné les 2 colonnes dans le haut */
+    align-items: stretch;
+    min-height: 100vh;
 }
-.sidebar {
-  width: 200px;
-  background-color: #4cd3f5;
-  padding: 20px 0;
-  min-height: 100vh;
-  flex-shrink: 0;
+aside {
+    width: 200px;
+    padding: 20px 0;
+    flex-shrink: 0;
+    background-color: #4cd3f5;
 }
-.sidebar a {
-    padding: 10px 0;
-    text-decoration: none;
+mark {
+    background-color: #f386e1;
+    padding: 0 3px;
+}
+aside a {
     display: block;
-    cursor: pointer;
-    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
     text-transform: uppercase;
+    font-weight: bold;
 }
-.sidebar a:hover {
-    background-color: #2e9fbb;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-color: #000000;
+aside a:hover {
+    background-color: #f386e1;
+    text-decoration: underline 3px;
 }
-.contenu-droite {
-    padding: 0px 20px;
+.section-droite {
+    display: flex;
+    padding: 0 20px;
+    gap: 20px;
+}
+.contenu-droite1, .contenu-droite2 {
     flex: 1;
 }
+.page-active {
+    font-weight: 600;
+    background-color: #f386e1;
+}
 
-/*PHP*/
+/*---Accueil---*/
 table {
     width: 100%;
     border-collapse: collapse; /* Fusionne les bordures pour un effet net */
@@ -74,7 +99,6 @@ table {
     font-family: sans-serif;
     border: 2px solid #000000;
 }
-
 th {
     background-color: #4cd3f5;
     color: rgb(0, 0, 0);
@@ -82,8 +106,14 @@ th {
     border: 2px solid #000000;
     padding : 10px
 }
-
 td {
     padding: 10px;
     border: 2px solid #000000;
+}
+td:nth-child(1), td:nth-child(2) { /* Cible le contenu des 2 premières colonnes */
+    text-align: center;
+}
+.title-section {
+    background-color: #f5c04c;
+    font-weight: 600;
 }
