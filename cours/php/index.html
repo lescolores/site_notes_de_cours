@@ -39,7 +39,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td colspan="3" class="title-section">Opérateur de base</td>
+                                <td colspan="3" class="title-section">Opérateur de comparaison</td>
                             </tr>
                             <tr>
                                 <td> < </td>
@@ -52,6 +52,38 @@
                                 <td> Ex. 40 > 12 </td>
                             </tr>
                             <tr>
+                                <td>!=</td>
+                                <td>Vérifie que les valeurs ne sont pas égales</td>
+                                <td>Surnommer le Non logique</td>
+                            </tr>
+                            <tr>
+                                <td>==</td>
+                                <td>Égal à</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>===</p>
+                                    <p>!==</p>
+                                </td>
+                                <td>
+                                    <p>Est identique à</p>
+                                    <p>N'est pas identique à</p>
+                                </td>
+                                <td>
+                                    <p>Vérifie que la valeur et le type (entier, caractère, etc) sont égales</p>
+                                    <p>Vérifie que la valeur et le type ne sont pas égales</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>!==</td>
+                                <td>N'est </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="title-section">Opérateurs arithmétiques</td>
+                            </tr>
+                            <tr>
                                 <td>%</td>
                                 <td>Modulo</td>
                                 <td>Calcul de 17 % 5 :
@@ -62,22 +94,24 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="3" class="title-section">Opérateurs de comparaisons et de logiques</td>
+                                <td>
+                                    <p>++</p>
+                                    <p>--</p>
+                                </td>
+                                <td>
+                                    <p>Incrémenter de 1</p>
+                                    <p>Désincrémenter de 1</p>
+                                <td>
+                                    <p>i++ signifie i + 1</p>
+                                    <p>i-- signifie i - 1</p>
                             </tr>
                             <tr>
-                                <td>&&</td>
-                                <td>Compare deux booléens, <mark>TOUTES</mark> les conditions doivent être vraies</td>
-                                <td>Surnommer le Et logique</td>
-                            </tr>
-                            <tr>
-                                <td>||</td>
-                                <td>Compare deux booléens, mais au minimum <mark>UNE seule</mark> condition doit être vraie</td>
-                                <td>Surnommer le Ou logique</td>
-                            </tr>
-                            <tr>
-                                <td>!=</td>
-                                <td>Vérifie que les valeurs ne sont pas</td>
-                                <td>Surnommer le Non logique</td>
+                                <td>**</td>
+                                <td>Calculer l'exposant</td>
+                                <td> 
+                                    <p>Aussi appeler puissance</p>
+                                    <p>3 ** 2 = 9 (équivalent à 3 au carré ou 3^2)</p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -93,19 +127,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td colspan="3" class="title-section">Opérateurs d'assignation</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>++</p>
-                                    <p>--</p>
-                                </td>
-                                <td>
-                                    <p>Incrémenter de 1</p>
-                                    <p>Désincrémenter de 1</p>
-                                <td>
-                                    <p>i++ signifie i + 1</p>
-                                    <p>i-- signifie i - 1</p>
+                                <td colspan="3" class="title-section">Opérateurs d'affectation</td>
                             </tr>
                             <tr>
                                 <td>
@@ -113,39 +135,45 @@
                                     <p>-=</p>
                                     <p>*=</p>
                                     <p>/=</p>
+                                    <p>.=</p>
+                                    <p>%=</p>
                                 <td>Assigner après l'opération</td>
                                 <td>
                                     <p>Permet d'éviter de répéter la variable inutilement</p>
                                     <p>Ex. : i+= 3 signifie i = i + 3</p>
+                                    <p>.= pour concaténer des chaînes de caractères</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <p>+=</p>
-                                    <p>-=</p>
-                                    <p>*=</p>
-                                    <p>/=</p>
-                                <td>Assigner après l'opération</td>
-                                <td>
-                                    <p>Permet d'éviter de répéter la variable inutilement</p>
-                                    <p>Ex. : i+= 3 signifie i = i + 3</p>
-                                </td>
+                                <td colspan="3" class="title-section">Opérateurs logiques</td>
+                            </tr>
+                            <tr>
+                                <td>&&</td>
+                                <td>Compare deux booléens, <mark>TOUTES</mark> les conditions doivent être vraies</td>
+                                <td>Surnommer le Et logique</td>
+                            </tr>
+                            <tr>
+                                <td>||</td>
+                                <td>Compare deux booléens, mais au minimum <mark>UNE seule</mark> condition doit être vraie</td>
+                                <td>Surnommer le Ou logique</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="title-section">Divers</td>
                             </tr>
                             <tr>
                                 <td>\</td>
                                 <td>
-                                    <p>1. Permet de ne pas confondre un apostrophe et un guillement</p>
+                                    <p>1. Permet de ne pas confondre un apostrophe et un guillemet</p>
                                     <p>2. Permet des actions invisibles</p>
                                 </td>
                                 <td>
+                                    <p>S'appelle un backslash</p>
                                     <p>1. Ex. : 'J\'aime la poutine'</p>
                                     <p>2. \n = Saut de ligne</p>
                                     <p>   \t = Faire un tabulation</p>
                                     <p>    \$ = Affiche le $</p>
-                                    <p>S'appelle un backslash</p>
                                 </td>
                             </tr>
-                            
                         </tbody>
                     </table>
                 </div>

@@ -57,7 +57,7 @@ h2 {
     min-height: 100vh;
 }
 aside {
-    width: 200px;
+    width: 250px;
     padding: 20px 0;
     flex-shrink: 0;
     background-color: #4cd3f5;

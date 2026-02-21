@@ -2,8 +2,10 @@ window.onload = function() {
     // Accueil de PHP
     const mesPages = [ // Nom de chaque page
         { texte: "Symboles", fichier: "index.html" },
-        { texte: "Conditions if else", fichier: "conditionnelles.html" },
-        { texte: "Boucles", fichier: "boucles.html" }
+        { texte: "if else", fichier: "if-else.html" },
+        { texte: "Boucles", fichier: "boucles.html" },
+        { texte: "Condition switch-case", fichier: "switch-case.html" },
+        { texte: "Booléen", fichier: "boolean.html" }
     ]; 
 
     const menu = document.getElementById('menu-sidebar');
